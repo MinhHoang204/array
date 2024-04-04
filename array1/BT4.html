@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Khai báo mảng số nguyên
+        let mang = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        // Chia mảng ban đầu thành hai mảng: mảng chứa số chẵn và mảng chứa số lẻ
+        let mangChan = mang.filter(function (item) {
+           return item % 2 === 0; // Giữ lại các phần tử chia hết cho 2 (các số chẵn)
+        });
+
+        let mangLe = mang.filter(function (item) {
+           return item % 2 !== 0; // Giữ lại các phần tử không chia hết cho 2 (các số lẻ)
+        });
+
+        // In hai mảng ra màn hình console
+       console.log("Mảng chứa các số chẵn là:");
+       console.log(mangChan);
+
+       console.log("Mảng chứa các số lẻ là:");
+       console.log(mangLe);
+
+    </script>
+</body>
+</html>

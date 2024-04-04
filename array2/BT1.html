@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Khai báo một mảng gồm các phần tử bất kì
+        let arr = [1, 2, 'a', 'b', 3, 'c', 4];
+        // Tạo một biến để kiểm tra xem có số nguyên trong mảng không
+        let hasInteger = false;
+        // Duyệt qua từng phần tử trong mảng và kiểm tra xem có phải số nguyên không
+        for (let i = 0; i < arr.length; i++) {
+            if (Number.isInteger(arr[i])) {
+               console.log(arr[i]);
+               hasInteger = true;
+            }
+        }
+        // Nếu không có số nguyên nào, hiển thị thông báo "Trong mảng không tồn tại số nguyên" lên màn hình console
+        if (!hasInteger) {
+            console.log("Trong mảng không tồn tại số nguyên");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Khai báo mảng số nguyên
+        let arr = [1, 2, 3, 4, 5, 2, 3, 4, 2, 1];
+
+        // Yêu cầu người dùng nhập số nguyên
+        let userInput = parseInt(prompt("Nhập số nguyên cần đếm trong mảng:"));
+
+        // Sử dụng reduce để đếm số lần xuất hiện của số nhập vào
+        let count = arr.reduce((total, currentValue) => {
+           return currentValue === userInput ? total + 1 : total;
+        }, 0);
+
+        // In ra số lần xuất hiện của số nhập vào
+        console.log(`Số lần xuất hiện của số ${userInput} trong mảng là: ${count}`);
+
+    </script>
+</body>
+</html>

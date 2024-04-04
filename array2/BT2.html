@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Khai báo mảng có sẵn
+        let arr = [1, 3, 5, 7, 9];
+
+        // Yêu cầu người dùng nhập giá trị
+        let userInput = prompt("Nhập giá trị cần tìm trong mảng:");
+
+        // Tìm kiếm giá trị trong mảng
+        let index = arr.indexOf(parseInt(userInput));
+
+        // Kiểm tra kết quả tìm kiếm và in ra thông báo tương ứng
+        if (index !== -1) {
+            console.log(`Phần tử ${userInput} được tìm thấy tại vị trí ${index} trong mảng.`);
+        } else {
+            console.log("Phần tử không tồn tại trong mảng.");
+        }
+
+    </script>
+</body>
+</html>
